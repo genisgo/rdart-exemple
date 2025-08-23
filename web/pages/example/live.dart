@@ -76,7 +76,7 @@ class Live extends Rview {
                 gap: 8,
                 children: [
                   ElevatedButton(
-                    label: 'Action',
+                    label: Text('Action'),
                     onPressed: () => window.alert('Action cliquée'),
                   ),
                   OutlinedButton(
@@ -337,7 +337,7 @@ class Live extends Rview {
         Padding(
           padding: EdgeInsets.all(12),
           child: ElevatedButton(
-            label: 'Fermer',
+            label: Text('Fermer'),
             onPressed: () => scafoled?.closeEndDrawer(),
           ),
         ),

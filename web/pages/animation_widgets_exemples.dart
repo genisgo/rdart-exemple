@@ -103,7 +103,7 @@ class AnimationWidgetsExemples extends Rview {
           sizedBox,
           Text("Hero 1"),
           ElevatedButton(
-            label: "Users Profiles",
+            label:Text( "Users Profiles"),
             onPressed: () {
               rnavigator.push(ProfileListPage.url,data: demoUsers);
             },

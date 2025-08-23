@@ -74,7 +74,7 @@ class ProfileListPage extends Rview {
         decoration: BoxDecoration(
           color: Color('#0f172aCC'),
           borderRadius: BorderRadius.all(Radius.circular(14)),
-          border: Border(all: BorderSide(color: 'rgba(255,255,255,.06)')),
+          border: Border(all: BorderSide(color: MaterialColor(255,255,255,.06))),
         ),
         child: Row(
           gap: 12,
@@ -106,7 +106,7 @@ class ProfileListPage extends Rview {
               ),
             ),
             ElevatedButton(
-              label: 'Voir',
+              label: Text("Voir"),
               onPressed: () {
                 // transition personnalisée : Hero
                 var to = ProfileDetailPage(user: u);
@@ -178,7 +178,7 @@ class ProfileDetailPage extends Rview {
     final actions = Row(
       gap: 8,
       children: [
-        ElevatedButton(label: 'Message', onPressed: () {}),
+        ElevatedButton(label: Text('Message'), onPressed: () {}),
         OutlinedButton(label: 'Appeler', onPressed: () {}),
       ],
     );

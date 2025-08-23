@@ -18,7 +18,9 @@ class ContenairTest extends Rview {
     decoration: BoxDecoration(
       color: MaterialColor.fromHex('#ffffff'),
       borderRadius: BorderRadius.all(const Radius.circular(12)),
-      border: Border(all: BorderSide(width: 1, color: 'rgba(0,0,0,.08)')),
+      border: Border(
+        all: BorderSide(width: 1, color: MaterialColor(0, 0, 0, .08)),
+      ),
       boxShadow: const [
         BoxShadow(
           offsetX: 0,
@@ -60,7 +62,7 @@ class ContenairTest extends Rview {
       // un "chip" centré dans le hero
       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
       decoration: BoxDecoration(
-        color:MaterialColor.fromHex( 'rgba(255,255,255,.9)'),
+        color: MaterialColor.fromHex('rgba(255,255,255,.9)'),
         borderRadius: BorderRadius.all(const Radius.circular(999)),
       ),
       child: Text('Bienvenue 👋'), // suppose un Relement texte simple

@@ -11,15 +11,15 @@ class AlertDialogExemple extends Rview {
         child: Center(
           child: Column(
             children: [
-              _optionButton(callback: exampleAlert, title: "Open Alert Dialog"),
+              _optionButton(callback: exampleAlert, title: Text("Open Alert Dialog")),
               _optionButton(
                 callback: exampleConfirm,
-                title: "Open Confim Dialog",
+                title: Text("Open Confim Dialog"),
                 variant: ElevatedVariant.secondary,
               ),
               _optionButton(
                 callback: exampleCustom,
-                title: "Open Custom Dialog",
+                title: Text("Open Custom Dialog"),
                 variant: ElevatedVariant.success
               ),
             ],
@@ -31,7 +31,7 @@ class AlertDialogExemple extends Rview {
 
   Relement _optionButton({
     required void Function() callback,
-    required String title,
+    required Relement title,
     ElevatedVariant variant = ElevatedVariant.primary,
   }) {
     return Padding(

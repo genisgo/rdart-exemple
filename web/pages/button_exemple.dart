@@ -42,7 +42,7 @@ class ButtonExemple extends Rview {
 
     // ElevatedButton primaire avec icône à gauche
     final eb = ElevatedButton(
-      label: 'Enregistrer',
+      label: Text('Enregistrer'),
       leftIcon: BsIcon(icon: Bicon.check2),
       onPressed: () => print('save'),
       variant: ElevatedVariant.primary,
@@ -50,7 +50,7 @@ class ButtonExemple extends Rview {
 
     // Disabled + loading
     final loadBtn = ElevatedButton(
-      label: 'Chargement...',
+      label: Text('Chargement...'),
       loading: true,
       onPressed: null, // inactif
       variant: ElevatedVariant.secondary,
@@ -58,7 +58,7 @@ class ButtonExemple extends Rview {
 
     // Full width + grand
     final full = ElevatedButton(
-      label: 'Continuer',
+      label:Text( 'Continuer'),
       size: ButtonSize.large,
       fullWidth: true,
       onPressed: () {},

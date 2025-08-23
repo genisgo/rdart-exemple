@@ -20,7 +20,7 @@ import 'animation_widgets_exemples.dart';
 import 'image_exemple.dart';
 import 'video_paler_exemple.dart';
 import 'carousel_exemple.dart';
-
+import 'toast_exemple.dart';
 class HomePage extends Rview {
   final DrawerController controller = DrawerController();
 
@@ -114,6 +114,7 @@ class HomePage extends Rview {
                 url: VideoPalerExemple.url,
               ),
               _DrawerItem(title: "Carousel Exemple", url: CarouselExemple.url),
+              _DrawerItem(title: "Toast Exemple", url: ToastExemple.url),
             ],
           ),
         ],

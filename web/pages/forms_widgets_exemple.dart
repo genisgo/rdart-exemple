@@ -70,7 +70,7 @@ class FormsWidgetsExemple extends Rview {
       onChanged: (value) {
         print(value);
       },
-      decoration: const InputDecoration(
+      decoration:  InputDecoration(
         labelText: 'Bio',
         helperText: 'Quelques lignes sur toi',
         filled: true,
@@ -78,7 +78,7 @@ class FormsWidgetsExemple extends Rview {
         border: OutlineInputBorder(borderRadius: 12),
         focusedBorder: OutlineInputBorder(
           borderRadius: 12,
-          borderSide: BorderSide(color: '#0d6efd', width: 2),
+          borderSide: BorderSide(color:MaterialColor.fromHex('#0d6efd'), width: 2),
         ),
       ),
       validator: (v) => v.trim().length < 10 ? '10 caractères minimum' : null,
@@ -140,7 +140,7 @@ class FormsWidgetsExemple extends Rview {
           Row(
             children: [
               ElevatedButton(
-                label: 'Valider',
+                label: Text('Valider'),
                 onPressed: () {
                   if (formCtl.validate()) {
                     formCtl.save();

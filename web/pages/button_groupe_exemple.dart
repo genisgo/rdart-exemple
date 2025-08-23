@@ -23,9 +23,9 @@ class ButtonGroupeExemple extends Rview {
     // ButtonGroup radio (single)
     final grp = ButtonGroup(
       buttons: [
-        ElevatedButton(label: 'Jour', onPressed: () {}),
-        ElevatedButton(label: 'Semaine', onPressed: () {}),
-        ElevatedButton(label: 'Mois', onPressed: () {}),
+        ElevatedButton(label: Text('Jour'), onPressed: () {}),
+        ElevatedButton(label: Text('Semaine'), onPressed: () {}),
+        ElevatedButton(label: Text('Mois'), onPressed: () {}),
       ],
       toggle: ButtonGroupToggle.single,
       initialActiveIndex: 0,

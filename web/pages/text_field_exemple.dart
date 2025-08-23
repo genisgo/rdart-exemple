@@ -132,15 +132,15 @@ class _ExempleOne extends Rview {
         maxLength: 60,
         border: OutlineInputBorder(
           borderRadius: 12,
-          borderSide: BorderSide(color: 'rgba(0,0,0,.20)', width: 1),
+          borderSide: BorderSide(color: MaterialColor(0,0,0,.20), width: 1),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: 12,
-          borderSide: BorderSide(color: '#0d6efd', width: 2),
+          borderSide: BorderSide(color: MaterialColor.fromHex('#0d6efd'), width: 2),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: 12,
-          borderSide: BorderSide(color: '#dc3545', width: 2),
+          borderSide: BorderSide(color:MaterialColor.fromHex( '#dc3545'), width: 2),
         ),
 
       ),
@@ -159,11 +159,11 @@ class _ExempleOne extends Rview {
         prefixIcon: BsIcon(icon: Bicon.lock, color: Colors.Black),
         border: OutlineInputBorder(
           borderRadius: 12,
-          borderSide: BorderSide(color: 'rgba(0,0,0,.20)', width: 1),
+          borderSide: BorderSide(color: MaterialColor(0,0,0,.20), width: 1),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: 12,
-          borderSide: BorderSide(color: Colors.red.color, width: 5),
+          borderSide: BorderSide(color: Colors.red, width: 5),
         ),
       ),
       onSubmitted: (v) => print('password submit: $v'),
@@ -196,7 +196,7 @@ class _ExempleTow extends Rview {
         border: NoInputBorder(),
         focusedBorder: OutlineInputBorder(
           borderRadius: 16,
-          borderSide: BorderSide(color: 'rgba(13,110,253,.35)', width: 2),
+          borderSide: BorderSide(color: MaterialColor(13,110,253,.35), width: 2),
         ),
         // petit rappel clavier à droite
         suffixText: 'Ctrl+K',
@@ -224,15 +224,15 @@ class _ExempleThree extends Rview {
       step: 1,
       variant: InputVariant.underline,
       size: FieldSize.medium,
-      decoration: const InputDecoration(
+      decoration:  InputDecoration(
         labelText: 'Quantité',
         suffixText: 'pcs',
         enabledBorder: UnderlineInputBorder(
-          borderSide: BorderSide(color: 'rgba(0,0,0,.25)', width: 1),
+          borderSide: BorderSide(color: MaterialColor(0,0,0,.25), width: 1),
         ),
         focusedBorder: UnderlineInputBorder(
           borderSide: BorderSide(
-            color: '#0d6efd',
+            color: MaterialColor.fromHex('#0d6efd'),
             width: 2,
             style: BorderStyleCss.dashed,
           ),
@@ -250,14 +250,14 @@ class _ExempleThree extends Rview {
       step: 0.01, // clavier décimal mobile
       variant: InputVariant.underline,
       size: FieldSize.medium,
-      decoration: const InputDecoration(
+      decoration:  InputDecoration(
         labelText: 'Prix',
         prefixText: '€',
         enabledBorder: UnderlineInputBorder(
-          borderSide: BorderSide(color: 'rgba(0,0,0,.25)', width: 1),
+          borderSide: BorderSide(color:MaterialColor(0,0,0,.25), width: 1),
         ),
         focusedBorder: UnderlineInputBorder(
-          borderSide: BorderSide(color: '#0d6efd', width: 2),
+          borderSide: BorderSide(color: MaterialColor.fromHex('#0d6efd'), width: 2),
         ),
         helperText: 'TTC',
       ),
@@ -287,11 +287,11 @@ class _ExempleFinal extends Rview {
         prefixIcon: BsIcon(icon: Bicon.calculator),
         border: OutlineInputBorder(
           borderRadius: 10,
-          borderSide: BorderSide(color: 'rgba(0,0,0,.20)', width: 1),
+          borderSide: BorderSide(color: MaterialColor(0,0,0,.20), width: 1),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: 10,
-          borderSide: BorderSide(color: '#0d6efd', width: 2),
+          borderSide: BorderSide(color: MaterialColor.fromHex('#0d6efd'), width: 2),
         ),
       ),
     );
@@ -306,11 +306,11 @@ class _ExempleFinal extends Rview {
         prefixIcon: BsIcon(icon: Bicon.calendar2Heart),
         border: OutlineInputBorder(
           borderRadius: 10,
-          borderSide: BorderSide(color: 'rgba(0,0,0,.20)', width: 1),
+          borderSide: BorderSide(color: MaterialColor(0,0,0,.20), width: 1),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: 10,
-          borderSide: BorderSide(color: '#0d6efd', width: 2),
+          borderSide: BorderSide(color:MaterialColor.fromHex( '#0d6efd'), width: 2),
         ),
       ),
     );
@@ -329,11 +329,11 @@ class _ExempleFinal extends Rview {
         helperText: 'Collez un lien Zoom/Meet/Teams.',
         border: OutlineInputBorder(
           borderRadius: 12,
-          borderSide: BorderSide(color: 'rgba(0,0,0,.20)', width: 1),
+          borderSide: BorderSide(color: MaterialColor(0,0,0,.20), width: 1),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: 12,
-          borderSide: BorderSide(color: '#0d6efd', width: 2),
+          borderSide: BorderSide(color: MaterialColor.fromHex('#0d6efd'), width: 2),
         ),
       ),
       onSubmitted: (v) => print('url: $v'),
@@ -353,11 +353,11 @@ class _ExempleFinal extends Rview {
         maxLength: 140, // compteur auto
         border: OutlineInputBorder(
           borderRadius: 12,
-          borderSide: BorderSide(color: 'transparent', width: 0),
+          borderSide: BorderSide(color: Colors.transparent, width: 0),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: 12,
-          borderSide: BorderSide(color: 'rgba(13,110,253,.35)', width: 2),
+          borderSide: BorderSide(color: MaterialColor(13,110,253,.35), width: 2),
         ),
       ),
       onChanged: (v) => print('note: ${v.length}/140'),
