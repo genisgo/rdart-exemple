@@ -23,6 +23,7 @@ import 'pages/image_exemple.dart';
 import 'pages/video_paler_exemple.dart';
 import 'pages/carousel_exemple.dart';
 import 'pages/toast_exemple.dart';
+import 'pages/table_view_exemple.dart';
 void main(List<String> args) {
   // une fois créés, on peut définir les callbacks de fermeture :
   // left.onRequestClose = () => ;
@@ -79,6 +80,7 @@ void main(List<String> args) {
         ),
         Rroute(url: CarouselExemple.url, page: (users) => CarouselExemple()),
         Rroute(url: ToastExemple.url, page: (users) => ToastExemple()),
+        Rroute(url: TableViewExemple.url, page: (users) => TableViewExemple()),
       ],
       home: Rroute(url: "/", page: (data) => HomePage()),
     ),

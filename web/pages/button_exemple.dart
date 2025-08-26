@@ -66,7 +66,7 @@ class ButtonExemple extends Rview {
 
     var sizedBox = SizedBox(height: 10);
     return Scaffold(
-      appBar: AppBar(title: "Exemple de Buttons"),
+      appBar: AppBar(title: Text("Exemple de Buttons")),
       body: Column(
         children: [
           _addPadding(tb),

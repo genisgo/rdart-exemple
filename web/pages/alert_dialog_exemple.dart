@@ -6,7 +6,7 @@ class AlertDialogExemple extends Rview {
   Relement build() {
     // TODO: implement build
     return Scaffold(
-      appBar: AppBar(title: "Alert Dialog Exemple"),
+      appBar: AppBar(title: Text("Alert Dialog Exemple")),
       body: Expanded(
         child: Center(
           child: Column(

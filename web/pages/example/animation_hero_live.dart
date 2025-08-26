@@ -142,7 +142,7 @@ class ProfileListPage extends Rview {
     }).toList();
 
     return Scaffold(
-      appBar: AppBar(title: 'Contacts'),
+      appBar: AppBar(title: Text('Contacts')),
       body: Padding(
         padding: EdgeInsets.all(16),
         child: Column(gap: 12, children: items),
@@ -179,13 +179,13 @@ class ProfileDetailPage extends Rview {
       gap: 8,
       children: [
         ElevatedButton(label: Text('Message'), onPressed: () {}),
-        OutlinedButton(label: 'Appeler', onPressed: () {}),
+        OutlinedButton(label: Text('Appeler'), onPressed: () {}),
       ],
     );
 
     return Scaffold(
       appBar: AppBar(
-        title: 'Profil',
+        title: Text('Profil'),
         leading: TextButton(
           label: 'Retour',
           onPressed: () {

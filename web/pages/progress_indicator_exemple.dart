@@ -6,7 +6,7 @@ class ProgressIndicatorExemple extends Rview {
   Relement build() {
     // TODO: implement build
     return Scaffold(
-      appBar: AppBar(title: "LinearProgressIndicator Exemple"),
+      appBar: AppBar(title: Text("LinearProgressIndicator Exemple")),
       body: Column(
         children: [Text("LinearProgressIndicator"), LinearProgressIndicator()],
       ),

@@ -17,7 +17,7 @@ class TrieToggleButtonExemple extends Rview {
 
     // TODO: implement build
     return Scaffold(
-      appBar: AppBar(title: "Trie ToggleButton Exemple"),
+      appBar: AppBar(title: Text("Trie ToggleButton Exemple")),
       body: Column(children: [notify]),
     );
   }

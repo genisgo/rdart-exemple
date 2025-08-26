@@ -52,7 +52,7 @@ class VideoPalerExemple extends Rview {
     // TODO: implement build
 
     return Scaffold(
-      appBar: AppBar(title: "Lecteur de video Exemple"),
+      appBar: AppBar(title:Text( "Lecteur de video Exemple")),
       body: Column(
         children: [
           Text("Leuteur Video"),

@@ -34,7 +34,7 @@ class ImageExemple extends Rview {
 
     final sizedBox = SizedBox(height: 20);
     return Scaffold(
-      appBar: AppBar(title: "Image Exemple"),
+      appBar: AppBar(title: Text("Image Exemple")),
       body: Padding(
         padding: EdgeInsets.all(20),
         child: Column(

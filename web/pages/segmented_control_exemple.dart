@@ -29,7 +29,7 @@ class SegmentedControlExemple extends Rview {
     );
 
     return Scaffold(
-      appBar: AppBar(title: "Semented Control"),
+      appBar: AppBar(title: Text("Semented Control")),
       body: Column(children: [segments]),
     );
   }

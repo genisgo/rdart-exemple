@@ -57,7 +57,7 @@ class TextFieldExemple extends Rview {
 
     var sizedBox = SizedBox(height: 20);
     return Scaffold(
-      appBar: AppBar(title: "TextField Exemple"),
+      appBar: AppBar(title: Text("TextField Exemple")),
       body: Row(
         children: [
           Padding(
@@ -156,7 +156,7 @@ class _ExempleOne extends Rview {
       decoration: InputDecoration(
         labelText: 'Mot de passe',
         showPasswordToggle: true, // 👁️
-        prefixIcon: BsIcon(icon: Bicon.lock, color: Colors.Black),
+        prefixIcon: BsIcon(icon: Bicon.lock, color: Colors.black),
         border: OutlineInputBorder(
           borderRadius: 12,
           borderSide: BorderSide(color: MaterialColor(0,0,0,.20), width: 1),

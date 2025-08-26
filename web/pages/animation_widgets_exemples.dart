@@ -82,7 +82,7 @@ class AnimationWidgetsExemples extends Rview {
     demoSwitcher();
     var sizedBox = SizedBox(height: 20);
     return Scaffold(
-      appBar: AppBar(title: "Animated Exemple"),
+      appBar: AppBar(title:Text( "Animated Exemple")),
       body: Column(
         children: [
           ExpandablePanel(

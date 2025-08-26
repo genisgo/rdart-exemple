@@ -24,7 +24,7 @@ class ToastExemple extends Rview {
     );
 
     return Scaffold(
-      appBar: AppBar(title: "Toast Exemple"),
+      appBar: AppBar(title: Text("Toast Exemple")),
       body: Column(
         children: [
           ElevatedButton(

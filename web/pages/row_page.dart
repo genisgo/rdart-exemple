@@ -30,7 +30,7 @@ class RowPage extends Rview {
   Relement build() {
     // TODO: implement build
     return Scaffold(
-      appBar: AppBar(title: "Exemple Row et Expanded"),
+      appBar: AppBar(title: Text("Exemple Row et Expanded")),
       body: Column(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.center,

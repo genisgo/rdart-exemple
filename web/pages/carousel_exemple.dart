@@ -24,7 +24,7 @@ class CarouselExemple extends Rview {
     );
     var sizedBox = SizedBox(height: 40, shrink: true);
     return Scaffold(
-      appBar: AppBar(title: "Carousel Exemple"),
+      appBar: AppBar(title:Text( "Carousel Exemple")),
       body: Column(
         bootstrap: [bwidth.x100],
         children: [

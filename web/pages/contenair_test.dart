@@ -97,7 +97,7 @@ class ContenairTest extends Rview {
     // TODO: implement build
 
     return Scaffold(
-      appBar: AppBar(title: "Les Container"),
+      appBar: AppBar(title: Text("Les Container")),
       body: Column(
         children: [
           Text("Box Container"),

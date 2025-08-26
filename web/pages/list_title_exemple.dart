@@ -6,7 +6,7 @@ class ListTitleExemple extends Rview {
   Relement build() {
     // TODO: implement build
     return Scaffold(
-      appBar: AppBar(title: "ListTitle Exemple"),
+      appBar: AppBar(title: Text("ListTitle Exemple")),
       body: Column(
         children: [
           SizedBox(height: 20),

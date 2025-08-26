@@ -14,8 +14,8 @@ class ButtonGroupeExemple extends Rview {
 
     // OutlinedButton secondaire avec icône
     final out = OutlinedButton(
-      label: 'Annuler',
-      leftIconHtml: '<i class="bi bi-x"></i>',
+      label: Text('Annuler'),
+      leftIcon: BsIcon(icon: Bicon.x),
       variant: ElevatedVariant.secondary,
       onPressed: () => print('cancel'),
     );
@@ -35,9 +35,9 @@ class ButtonGroupeExemple extends Rview {
     // ButtonGroup multi (checkbox)
     final grpMulti = ButtonGroup(
       buttons: [
-        OutlinedButton(label: 'PDF', onPressed: () {}),
-        OutlinedButton(label: 'CSV', onPressed: () {}),
-        OutlinedButton(label: 'XLSX', onPressed: () {}),
+        OutlinedButton(label: Text('PDF'), onPressed: () {}),
+        OutlinedButton(label: Text('CSV'), onPressed: () {}),
+        OutlinedButton(label: Text('XLSX'), onPressed: () {}),
       ],
       toggle: ButtonGroupToggle.multi,
       initialActives: {1},

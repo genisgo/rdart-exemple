@@ -21,6 +21,8 @@ import 'image_exemple.dart';
 import 'video_paler_exemple.dart';
 import 'carousel_exemple.dart';
 import 'toast_exemple.dart';
+import 'table_view_exemple.dart';
+
 class HomePage extends Rview {
   final DrawerController controller = DrawerController();
 
@@ -30,7 +32,7 @@ class HomePage extends Rview {
       drawerController: controller,
       appBar: AppBar(
         elevated: false,
-        title: 'Demo',
+        title: Text('Demo'),
         leading: AppBarActionButton(
           label: '≡',
           title: 'Menu',
@@ -115,6 +117,7 @@ class HomePage extends Rview {
               ),
               _DrawerItem(title: "Carousel Exemple", url: CarouselExemple.url),
               _DrawerItem(title: "Toast Exemple", url: ToastExemple.url),
+              _DrawerItem(title: "TableView Exemple", url: TableViewExemple.url),
             ],
           ),
         ],

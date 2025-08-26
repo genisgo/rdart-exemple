@@ -80,7 +80,7 @@ class Live extends Rview {
                     onPressed: () => window.alert('Action cliquée'),
                   ),
                   OutlinedButton(
-                    label: 'Annuler',
+                    label: Text('Annuler'),
                     onPressed: () => window.alert('Annuler'),
                   ),
                   TextButton(
@@ -114,7 +114,7 @@ class Live extends Rview {
     final dataBox = Container(
       padding: EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: Colors.White,
+        color: Colors.white,
         borderRadius: BorderRadius.all(const Radius.circular(12)),
         boxShadow: const [BoxShadow(blurRadius: 16, color: 'rgba(0,0,0,.06)')],
       ),
@@ -222,7 +222,7 @@ class Live extends Rview {
         Container(
           padding: EdgeInsets.all(12),
           decoration: BoxDecoration(
-            color:Colors.White,
+            color:Colors.white,
             borderRadius: BorderRadius.all(const Radius.circular(12)),
             boxShadow: const [
               BoxShadow(blurRadius: 16, color: 'rgba(0,0,0,.06)'),
@@ -350,7 +350,7 @@ class Live extends Rview {
   // ---------------------------------------------------------------
   AppBar _buildAppBar() {
     return AppBar(
-      title: 'Rdart Demo',
+      title: Text('Rdart Demo'),
       leading: AppBarActionButton(
         label: '≡',
         title: 'Menu',
