@@ -13,7 +13,7 @@ class AlignExemple extends Rview {
       ),
       child: Align(
         alignment: Alignment.bottomRight,
-        expand: true,
+        expand: AlignExpand.all,
         child: Container(
           margin: EdgeInsets.all(8),
           padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),

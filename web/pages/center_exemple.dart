@@ -5,8 +5,10 @@ class CenterExemple extends Rview {
   @override
   Relement build() {
     // TODO: implement build
-    return Center(
-        expand: true, // occupe tout l'espace dispo
+    return Scaffold(appBar: AppBar(title: Text("Center Exemple"),
+    ),
+    body: Center(
+        expand: AlignExpand.width, // occupe tout l'espace dispo
         child: Container(
           padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
           decoration: BoxDecoration(
@@ -18,6 +20,6 @@ class CenterExemple extends Rview {
           ),
           child: Text('Hello 👋'),
         ),
-      );
+      ));
   }
 }

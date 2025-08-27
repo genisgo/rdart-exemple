@@ -62,7 +62,7 @@ class ContenairTest extends Rview {
       // un "chip" centré dans le hero
       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
       decoration: BoxDecoration(
-        color: MaterialColor.fromHex('rgba(255,255,255,.9)'),
+        color: MaterialColor(255,255,255,.9),
         borderRadius: BorderRadius.all(const Radius.circular(999)),
       ),
       child: Text('Bienvenue 👋'), // suppose un Relement texte simple

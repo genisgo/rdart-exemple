@@ -15,7 +15,7 @@ import "../../flutter_library.dart";
 // Demo state/refs
 // ---------------------------------------------------------------
 class Live extends Rview {
-  static final String url ="live";
+  static final String url = "live";
   final controller = DrawerController();
   Scaffold? scafoled;
   @override
@@ -58,7 +58,7 @@ class Live extends Rview {
         Container(
           padding: EdgeInsets.all(12),
           decoration: BoxDecoration(
-            color:Colors.white,
+            color: Colors.white,
             borderRadius: BorderRadius.all(const Radius.circular(12)),
             boxShadow: const [
               BoxShadow(blurRadius: 16, color: 'rgba(0,0,0,.06)'),
@@ -222,7 +222,7 @@ class Live extends Rview {
         Container(
           padding: EdgeInsets.all(12),
           decoration: BoxDecoration(
-            color:Colors.white,
+            color: Colors.white,
             borderRadius: BorderRadius.all(const Radius.circular(12)),
             boxShadow: const [
               BoxShadow(blurRadius: 16, color: 'rgba(0,0,0,.06)'),
@@ -352,21 +352,21 @@ class Live extends Rview {
     return AppBar(
       title: Text('Rdart Demo'),
       leading: AppBarActionButton(
-        label: '≡',
+        label: BsIcon(icon: Bicon.menuApp),
         title: 'Menu',
         onPressed: () => scafoled?.toggleDrawer(),
-        bootstrap: const ['btn', 'btn-sm', 'btn-outline-secondary'],
+        bootstrap: const [Btn.btn, Btn.sm, Btn.secondary],
       ),
       actions: [
         AppBarActionButton(
-          label: 'Panel',
+          label:BsIcon(icon: Bicon.alarm),
           onPressed: () => scafoled?.toggleEndDrawer(),
-          bootstrap: const ['btn', 'btn-sm', 'btn-outline-primary'],
+          // bootstrap: const ['btn', 'btn-sm', 'btn-outline-primary'],
         ),
         AppBarActionButton(
-          label: 'Sync',
+          label: BsIcon(icon: Bicon.aspectRatio),
           onPressed: () => window.alert('Synchronisation…'),
-          bootstrap: const ['btn', 'btn-sm', 'btn-link'],
+          // bootstrap: const ['btn', 'btn-sm', 'btn-link'],
         ),
       ],
     );

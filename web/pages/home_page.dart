@@ -28,19 +28,21 @@ class HomePage extends Rview {
 
   @override
   Relement build() {
+    var body = _BodyBuilder(content: SizedBox());
+
     return Scaffold(
       drawerController: controller,
       appBar: AppBar(
         elevated: false,
         title: Text('Demo'),
         leading: AppBarActionButton(
-          label: '≡',
+          label: BsIcon(icon: Bicon.menuApp),
           title: 'Menu',
           onPressed: () => controller.openDrawer(),
         ),
         actions: [
           AppBarActionButton(
-            label: 'Panel',
+            label: BsIcon(icon: Bicon.badge3d),
             onPressed: () => controller.openEndDrawer(),
           ),
         ],
@@ -117,7 +119,10 @@ class HomePage extends Rview {
               ),
               _DrawerItem(title: "Carousel Exemple", url: CarouselExemple.url),
               _DrawerItem(title: "Toast Exemple", url: ToastExemple.url),
-              _DrawerItem(title: "TableView Exemple", url: TableViewExemple.url),
+              _DrawerItem(
+                title: "TableView Exemple",
+                url: TableViewExemple.url,
+              ),
             ],
           ),
         ],
@@ -152,8 +157,8 @@ class HomePage extends Rview {
             icon: BsIcon(icon: Bicon.person),
           ),
         ],
-        onTap: (i) {
-          // navigation...
+        onTap: (index) {
+          body.setContent(  Text("index $index"));
         },
       ),
       floatingActionButton: FloatingActionButton(
@@ -161,6 +166,7 @@ class HomePage extends Rview {
         onPressed: () => window.alert('FAB'),
         icon: BsIcon(icon: Bicon.plusLg),
       ),
+      body: body,
     );
   }
 
@@ -174,5 +180,20 @@ class HomePage extends Rview {
         controller.closeDrawer();
       },
     );
+  }
+}
+
+class _BodyBuilder extends Rview {
+  Relement content;
+  _BodyBuilder({required this.content});
+  @override
+  Relement build() {
+    // TODO: implement build
+    return Center(expand: AlignExpand.width, child:  content);
+  }
+
+  void setContent(Relement newContent) {
+    content = newContent;
+    setState(() {});
   }
 }

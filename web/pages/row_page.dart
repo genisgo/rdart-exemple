@@ -43,7 +43,7 @@ class RowPage extends Rview {
           ),
           Expanded(
             child: Center(
-              expand: true,
+              expand: AlignExpand.all,
               child: Container(
                 alignment: Alignment.center,
                 padding: EdgeInsets.all(5),

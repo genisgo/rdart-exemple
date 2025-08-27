@@ -224,7 +224,7 @@ class FormsWidgetsExemple extends Rview {
           SizedBox(height: 100, width: 400, child: dd),
           Text("MultiSelect"),
           SizedBox(height: 100, width: 400, child: multiSelects),
-          Center(child: files, expand: true),
+          Center(child: files, expand: AlignExpand.all),
           terms,
           notif,
           volume,
