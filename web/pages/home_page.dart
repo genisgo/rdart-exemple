@@ -22,7 +22,10 @@ import 'video_paler_exemple.dart';
 import 'carousel_exemple.dart';
 import 'toast_exemple.dart';
 import 'table_view_exemple.dart';
-
+import 'color_animation_exempl.dart';
+import 'size_animation_exemple.dart';
+import 'example/stream_page.dart';
+import 'text_field_form_exemple.dart';
 class HomePage extends Rview {
   final DrawerController controller = DrawerController();
 
@@ -102,6 +105,10 @@ class HomePage extends Rview {
                 url: FormsWidgetsExemple.url,
               ),
               _DrawerItem(
+                title: "TextFieldForm Forms Widgets",
+                url: TextFieldFormExemple.url,
+              ),
+              _DrawerItem(
                 title: "Exemple Alert Dialog",
                 url: AlertDialogExemple.url,
               ),
@@ -122,6 +129,18 @@ class HomePage extends Rview {
               _DrawerItem(
                 title: "TableView Exemple",
                 url: TableViewExemple.url,
+              ),
+              _DrawerItem(
+                title: "ColorAnimation Exemple",
+                url: ColorAnimationExempl.url,
+              ),
+              _DrawerItem(
+                title: "Size Animation Exemple",
+                url: SizeAnimationExemple.url,
+              ),
+              _DrawerItem(
+                title: "Stream Page Exemple",
+                url: StreamPage.url,
               ),
             ],
           ),
@@ -158,7 +177,7 @@ class HomePage extends Rview {
           ),
         ],
         onTap: (index) {
-          body.setContent(  Text("index $index"));
+          body.setContent(Text("index $index"));
         },
       ),
       floatingActionButton: FloatingActionButton(
@@ -189,7 +208,7 @@ class _BodyBuilder extends Rview {
   @override
   Relement build() {
     // TODO: implement build
-    return Center(expand: AlignExpand.width, child:  content);
+    return Center(expand: AlignExpand.width, child: content);
   }
 
   void setContent(Relement newContent) {

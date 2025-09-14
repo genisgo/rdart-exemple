@@ -41,10 +41,17 @@ class FormsWidgetsExemple extends Rview {
       ),
     ];
 
-    final dd = DropdownField<String>(size: FieldSize.large,
+    final dd = DropdownField<String>(
+      size: FieldSize.large,
       items: items,
-      hint: SizedBox(height: 50,child: Text('Choisir un projet', color: MaterialColor.fromHex('#9fb2cc'))),
-      decoration: const InputDecoration(labelText: 'Projet',),
+      hint: SizedBox(
+        height: 50,
+        child: Text(
+          'Choisir un projet',
+          color: MaterialColor.fromHex('#9fb2cc'),
+        ),
+      ),
+      decoration: const InputDecoration(labelText: 'Projet'),
       onChanged: (v) {
         print('Choisi: $v');
       },
@@ -84,7 +91,7 @@ class FormsWidgetsExemple extends Rview {
           ),
         ),
       ],
-      decoration: const InputDecoration(labelText: 'Pays'),
+      // decoration: const InputDecoration(labelText: 'Pays'),
       validator: (v) => (v == null) ? 'Choisis un pays' : null,
       onSaved: (v) => print('pays: $v'),
     );
@@ -93,19 +100,28 @@ class FormsWidgetsExemple extends Rview {
       MultiSelectItem(
         value: 'a',
         child: Row(
-          children: [CircleAvatar(imageUrl: 'https://picsum.photos/seed/a/64'), Text('Alpha')],
+          children: [
+            CircleAvatar(imageUrl: 'https://picsum.photos/seed/a/64'),
+            Text('Alpha'),
+          ],
         ),
       ),
       MultiSelectItem(
         value: 'b',
         child: Row(
-          children: [CircleAvatar(imageUrl: 'https://picsum.photos/seed/b/64'), Text('Beta')],
+          children: [
+            CircleAvatar(imageUrl: 'https://picsum.photos/seed/b/64'),
+            Text('Beta'),
+          ],
         ),
       ),
       MultiSelectItem(
         value: 'g',
         child: Row(
-          children: [CircleAvatar(imageUrl: 'https://picsum.photos/seed/c/64'), Text('Gamma')],
+          children: [
+            CircleAvatar(imageUrl: 'https://picsum.photos/seed/c/64'),
+            Text('Gamma'),
+          ],
         ),
       ),
     ];
@@ -130,7 +146,8 @@ class FormsWidgetsExemple extends Rview {
       ],
       decoration: const InputDecoration(
         labelText: 'Ville',
-        helperText: 'Tape puis choisis',border: OutlineInputBorder(borderSide: BorderSide(color: Colors.gray))
+        helperText: 'Tape puis choisis',
+        border: OutlineInputBorder(borderSide: BorderSide(color: Colors.gray)),
       ),
       validator: (v) => (v == null || v.isEmpty) ? 'Ville requise' : null,
       onSaved: (v) => print('ville: $v'),
@@ -175,7 +192,7 @@ class FormsWidgetsExemple extends Rview {
 
     // 6) Fichiers
     final files = FilePickerFormField(
-      label: BsIcon(icon: Bicon.filePdf),
+      label: BsIcon(icon: Bicon.filePdf, size: 64),
       controller: formCtl,
       multiple: true,
       accept: 'image/*,.pdf',
@@ -224,7 +241,10 @@ class FormsWidgetsExemple extends Rview {
           SizedBox(height: 100, width: 400, child: dd),
           Text("MultiSelect"),
           SizedBox(height: 100, width: 400, child: multiSelects),
-          Center(child: files, expand: AlignExpand.all),
+          Center(
+            child: Column(children: [Text("Choisir un fichier"), files]),
+            expand: AlignExpand.all,
+          ),
           terms,
           notif,
           volume,
@@ -247,7 +267,9 @@ class FormsWidgetsExemple extends Rview {
     );
     return Scaffold(
       appBar: AppBar(title: Text("Form Exemple")),
-      body: Container(width: 500, child: form),
+      body: Container(
+        padding: EdgeInsets.all(20),
+        width: 500, child: form),
     );
   }
 }

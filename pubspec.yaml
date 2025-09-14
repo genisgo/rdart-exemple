@@ -10,7 +10,8 @@ environment:
 dependencies:
   web: ^0.5.1
   riverpod: ^2.5.0
-  rdart: 
+  rxdart: ^0.28.0
+  rdart:
     path: ../rdart
 dev_dependencies:
   build_runner: ^2.4.8

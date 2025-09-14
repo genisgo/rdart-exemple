@@ -24,6 +24,10 @@ import 'pages/video_paler_exemple.dart';
 import 'pages/carousel_exemple.dart';
 import 'pages/toast_exemple.dart';
 import 'pages/table_view_exemple.dart';
+import 'pages/color_animation_exempl.dart';
+import 'pages/size_animation_exemple.dart';
+import 'pages/example/stream_page.dart';
+import 'pages/text_field_form_exemple.dart';
 void main(List<String> args) {
   // une fois créés, on peut définir les callbacks de fermeture :
   // left.onRequestClose = () => ;
@@ -70,6 +74,10 @@ void main(List<String> args) {
           page: (data) => AnimationWidgetsExemples(),
         ),
         Rroute(
+          url: TextFieldFormExemple.url,
+          page: (data) => TextFieldFormExemple(),
+        ),
+        Rroute(
           url: ProfileListPage.url,
           page: (users) => ProfileListPage(users: users),
         ),
@@ -81,6 +89,9 @@ void main(List<String> args) {
         Rroute(url: CarouselExemple.url, page: (users) => CarouselExemple()),
         Rroute(url: ToastExemple.url, page: (users) => ToastExemple()),
         Rroute(url: TableViewExemple.url, page: (users) => TableViewExemple()),
+        Rroute(url: ColorAnimationExempl.url, page: (users) => ColorAnimationExempl()),
+        Rroute(url: SizeAnimationExemple.url, page: (users) => SizeAnimationExemple()),
+        Rroute(url: StreamPage.url, page: (users) => StreamPage()),
       ],
       home: Rroute(url: "/", page: (data) => HomePage()),
     ),
