@@ -28,6 +28,8 @@ import 'pages/color_animation_exempl.dart';
 import 'pages/size_animation_exemple.dart';
 import 'pages/example/stream_page.dart';
 import 'pages/text_field_form_exemple.dart';
+import 'pages/pdf_reader_exemple.dart';
+
 void main(List<String> args) {
   // une fois créés, on peut définir les callbacks de fermeture :
   // left.onRequestClose = () => ;
@@ -89,9 +91,16 @@ void main(List<String> args) {
         Rroute(url: CarouselExemple.url, page: (users) => CarouselExemple()),
         Rroute(url: ToastExemple.url, page: (users) => ToastExemple()),
         Rroute(url: TableViewExemple.url, page: (users) => TableViewExemple()),
-        Rroute(url: ColorAnimationExempl.url, page: (users) => ColorAnimationExempl()),
-        Rroute(url: SizeAnimationExemple.url, page: (users) => SizeAnimationExemple()),
+        Rroute(
+          url: ColorAnimationExempl.url,
+          page: (users) => ColorAnimationExempl(),
+        ),
+        Rroute(
+          url: SizeAnimationExemple.url,
+          page: (users) => SizeAnimationExemple(),
+        ),
         Rroute(url: StreamPage.url, page: (users) => StreamPage()),
+        Rroute(url: PdfReaderExemple.url, page: (users) => PdfReaderExemple()),
       ],
       home: Rroute(url: "/", page: (data) => HomePage()),
     ),

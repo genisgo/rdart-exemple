@@ -1,0 +1,23 @@
+<style>
+    #download,
+    #secondaryDownload,
+    #print,
+    #openFile,
+    #secondaryOpenFile,
+    #viewBookmark {
+        display: none !important;
+    }
+</style>
+<script>
+    document.addEventListener('keydown', function (e) {
+        const k = e.key?.toLowerCase();
+        const ctrl = e.ctrlKey || e.metaKey;
+        if (ctrl && (k === 's' || k === 'p')) { e.preventDefault(); e.stopPropagation(); }
+    }, true);
+    window.addEventListener('DOMContentLoaded', () => {
+        ['download', 'secondaryDownload', 'print', 'openFile', 'secondaryOpenFile'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) { el.removeAttribute('href'); el.onclick = e => { e.preventDefault(); e.stopPropagation(); }; el.style.pointerEvents = 'none'; }
+        });
+    });
+</script>

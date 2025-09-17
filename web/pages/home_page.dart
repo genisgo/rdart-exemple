@@ -26,6 +26,7 @@ import 'color_animation_exempl.dart';
 import 'size_animation_exemple.dart';
 import 'example/stream_page.dart';
 import 'text_field_form_exemple.dart';
+import 'pdf_reader_exemple.dart';
 class HomePage extends Rview {
   final DrawerController controller = DrawerController();
 
@@ -139,6 +140,10 @@ class HomePage extends Rview {
                 url: SizeAnimationExemple.url,
               ),
               _DrawerItem(
+                title: "PDF Reader Exemple",
+                url: PdfReaderExemple.url,
+              ),
+              _DrawerItem(
                 title: "Stream Page Exemple",
                 url: StreamPage.url,
               ),
@@ -207,7 +212,7 @@ class _BodyBuilder extends Rview {
   _BodyBuilder({required this.content});
   @override
   Relement build() {
-    // TODO: implement build
+    //TODO: implement build
     return Center(expand: AlignExpand.width, child: content);
   }
 
